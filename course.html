@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity University</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Amity University is inviting applications for admission to UG and PG courses.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Diploma</h3>
+                <p>Amity University offers several diploma level courcses such as<br>
+                    Diploma in - Automobile Engineering<br>
+                    Diploma in - Civil Engineering<br>
+                    Diploma in - Computer Engineering<br>
+                    Diploma in - Electronics Engineering<br>
+                    Diploma in - Electrical Engineering<br>
+                    Diploma in - Information Technology<br>
+                    Diploma in - Mechanical Engineering.</p>
+            </div>
+            <div class="course-col">
+                <h3>Graduation</h3>
+                <p>Amity University offers wide range of Graduate Level Courses in several fields such as<br>
+                    Aerospace, 
+                    Computer Science/IT, 
+                    Banking & Finance, 
+                    Communication, 
+                    Business Administration, 
+                    Medicale, 
+                    and many more...
+
+                    </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Amity University offers wide range of Graduate Level Courses in several fields such as<br>
+                    Logistic & Supply Chain Management, 
+                    Hospital Management & Administration, 
+                    Film & Drama, 
+                    Hospital Administration, 
+                    Foreign Languages, 
+                    Marine Science ,
+                    Finance, 
+                    Avionics, 
+                    Hotel Management Hospitality, 
+                    Wildlife Sciences, 
+                    Performing Arts, 
+                    Mass Communication, 
+                    Journalism & Mass Communication, 
+                    and many more. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACILITIES -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Amity is the leading education group of India with over 50000 students studying across 700 acres of hi-tech campus.
+        </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.jpg" alt="library">
+                <h3>World Class Library</h3>
+                <p>Spread over. 56,000. SQ. FT. The libraries at Amity are more like Integrated Knowledge Resource Centres that are 
+                    stocked with over 2 lac books in total; periodicals, references, national and international journals, covering all 
+                    aspects of academic studies and research materials.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/ground.jpg" alt="ground">
+                <h3>Sports</h3>
+                <p>At Amity, sports form one of the important aspects of a student's development. From increasing concentration levels
+                     and working as a team to inculcating a winning spirit; sports help students build a strong character and a well
+                      rounded personality.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.jpg" alt="cafeteria">
+                <h3>Cafeteria</h3>
+                <p>Amity has a multi-mix of eating joints catering to every taste. There’s Café Coffee Day, Dosa Plaza, Mamma Mia, 
+                    Cocoberry, Domino's, Bikano and Mrs. Kaur Cookies within the campus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Amity today is one of the most trusted name in Education and has been ranked the No. 1 Private University,<br>
+            wherein 95,000 students are pursuing over 240 programs , spread over 1,000 acres of campuses with 4.5 million Sq. ft of built up area.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made by <i class="fa fa-heart-o"></i> Kinshuk</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!--<?php 
+
+include "config.php";
+
+  if (isset($_POST['submit'])) {
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $comment = $_POST['comment'];
+
+
+    $sql = "INSERT INTO `user_info`(`name`, `email`,`comment`) VALUES ('$name','$email','$comment')";
+
+    $result = $conn->query($sql);
+
+    if ($result == TRUE) {
+
+      echo "New record created successfully.";
+
+    }else{
+
+      echo "Error:". $sql . "<br>". $conn->error;
+
+    }
+
+    $conn->close();
+
+  } 
+
+?>
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity University </title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs</h1>
+    </section>
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="certificate">
+                <h2>Our Certificate & Online Programs</h2>
+                <p>Amity Education Group is India’s leading private education group, ranked amongst the top 3% Universities Globally by QS(we are ranked #1 in India and #37 in the world for our flagship program- Online MBA), UK rankings and the only University in India with the highest US & UK accreditation. Our programs are also WES accredited in the US & Canada. We were the very first in India to get UGC approval for our online programs.</p>
+                <br>
+                <p>Amity Online programmes are designed to give your career the perfect boost to achieve your full potential. Over the years, Amity University Online has succesfully implemented Online education in India through its well-researched curriculum, renowned faculty, cutting-edge technology and close industry & academic partnerships
+
+                    2,25,000 students are benefitting from Amity's online programmes, there have already been 36,000 campus placements and over 1,00,000 alumni benefitted from it.</p>
+                <br>
+                <p>The Ministry of External Affairs, Government of India, chose Amity University Online as the first and largest private institution to participate in the prestigious Pan African e-Network Project. The Indian government has awarded 15,000 scholarships through the E-Vidyabharti Project for African students and professionals to enrol in online courses offered by prestigious Indian universities in cutting-edge fields.</p>
+                <br>
+                <p>"Amity University is a firm believer in the role of education in nation-building and fostering economic progress," said Mr. Ajit Chauhan, Chairman of Amity University Online. The optimum time to pick up new talents and widen one's horizons of knowledge is now in order to prepare for the challenges of the post-Covid era. We have been able to close the digital divide by utilising cutting-edge e-technologies, which also allow students to study at home with professors from prestigious overseas universities.
+
+                    The launch webinar was graced by Shri Sevala
+                    
+                    </p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form" method = "post" action ="">
+                        <input type="text" placeholder="Enter Name" name = "name" >
+                        <input type="email" placeholder="Enter Email" name = "email">
+                        <textarea rows="5" placeholder="Your comment" name = "comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn" name = "submit">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>42</span>
+                </div>
+                <div>
+                    <span>AutoCAD</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Amity today is one of the most trusted name in Education and has been ranked the No. 1 Private University,<br>
+            wherein 95,000 students are pursuing over 240 programs , spread over 1,000 acres of campuses with 4.5 million Sq. ft of built up area.
+            </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made by <i class="fa fa-heart-o"></i> kinshuk</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
